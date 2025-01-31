@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #4ecca3;
+    font-family: montserrat, serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4ecca3;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 40px;
+    height: 20px;
+    width: 100%;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    font-size: medium;
+}
+
+.rest-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vh;
+}
+
+.rest-logo {
+    width: 250px;
+}
+
+.menu-img {
+    object-fit: contain;
+    height: 225px;
+    width: 250px;
+}
+
+.product > .level {
+    background-color: #00c88f;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 270px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.rest-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.rest-vid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding: 10px auto;
+}
+
+.order-btn {
+    background-color: #5DB996;
+    border: 0;
+    padding: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: large;
+}
+
+.order-btn:hover {
+    background-color: #009e71;
+    transition: background-color 0.3s;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+}
+
+#Contact_With_Us [type="email"] {
+    padding: 10px;
+    width: 30vw;
+    border-radius: 3px;
+    border: 0;
+    font-weight: 700;
+    font-size: large;
+}
+
+#Contact_With_Us [type="submit"] {
+    padding: 10px;
+    width: 80px;
+    background-color: #5DB996;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0;
+    font-weight: 700;
+    font-size: large;
+}
+
+#Contact_With_Us [type="submit"]:hover {
+    background-color: #009e71;
+    transition: background-color 0.3s;
+}
+
+.rest-footer {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 100px;
+    padding: 20px;
+    width: 100%;
+    background-color: azure;
+}
+
+@media (min-width: 375px) and (max-width: 630px) {
+    .rest-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rest-logo {
+        width: 150px;
+    }
+
+    nav {
+        font-size: small;
+    }
+
+    #Contact_With_Us [type="email"] {
+        padding: 10px;
+        margin-top: 20px;
+        width: 250px;
+        border-radius: 3px;
+        border: 0;
+        font-weight: 700;
+        font-size: medium;
+    }
+
+    .rest-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+        width: 40vh;
+    }
+
+}
